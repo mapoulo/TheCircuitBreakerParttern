@@ -2766,3 +2766,218 @@ java.lang.Exception: File not found: C:\Users\oupam\Documents\Work-Java-Projects
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:20:01.871
 !MESSAGE executing callback sts4.classpath.EREtBewM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:17.452
+!MESSAGE Preparing classpath changed notification qqqqqqqq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:17.685
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:17.704
+!MESSAGE classpath=128 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:17.712
+!MESSAGE executing callback sts4.classpath.EREtBewM qqqqqqqq false 128
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:17.910
+!MESSAGE executing callback sts4.classpath.EREtBewM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:18.303
+!MESSAGE Preparing classpath changed notification qqqqqqqq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:18.317
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:18.349
+!MESSAGE classpath=128 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:18.360
+!MESSAGE executing callback sts4.classpath.EREtBewM qqqqqqqq false 128
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:23:20.373
+!MESSAGE executing callback sts4.classpath.EREtBewM FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-12-07 16:23:20.383
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1957)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:24:14.505
+!MESSAGE Preparing classpath changed notification qqqqqqqq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:24:14.515
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:24:14.524
+!MESSAGE executing callback sts4.classpath.EREtBewM qqqqqqqq true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:24:14.644
+!MESSAGE executing callback sts4.classpath.EREtBewM SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-12-07 16:26:17.924
+!MESSAGE The POM for circuit-breaker:circuit-breaker:jar:0.1.8 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-12-07 16:26:18.302
+!MESSAGE The POM for circuit-breaker:circuit-breaker:jar:0.1.8 is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:19.711
+!MESSAGE Preparing classpath changed notification API-GATEWAY
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:19.721
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:19.742
+!MESSAGE classpath=169 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:19.750
+!MESSAGE executing callback sts4.classpath.EREtBewM API-GATEWAY false 169
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:19.948
+!MESSAGE executing callback sts4.classpath.EREtBewM SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-12-07 16:26:21.743
+!MESSAGE The POM for circuit-breaker:circuit-breaker:jar:0.1.8 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-07 16:26:23.251
+!MESSAGE Could not download sources for circuit-breaker:circuit-breaker:0.1.8
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact circuit-breaker:circuit-breaker:jar:sources:0.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing circuit-breaker:circuit-breaker:jar:sources:0.1.8
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-07 16:26:23.251
+!MESSAGE Could not resolve artifact circuit-breaker:circuit-breaker:jar:sources:0.1.8
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-07 16:26:23.251
+!MESSAGE Missing circuit-breaker:circuit-breaker:jar:sources:0.1.8
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:34.388
+!MESSAGE Preparing classpath changed notification API-GATEWAY
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:34.398
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:34.415
+!MESSAGE classpath=168 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:34.423
+!MESSAGE executing callback sts4.classpath.EREtBewM API-GATEWAY false 168
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:26:34.633
+!MESSAGE executing callback sts4.classpath.EREtBewM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:28:49.248
+!MESSAGE Preparing classpath changed notification API-GATEWAY
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:28:49.258
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:28:49.274
+!MESSAGE classpath=175 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:28:49.282
+!MESSAGE executing callback sts4.classpath.EREtBewM API-GATEWAY false 175
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-07 16:28:49.474
+!MESSAGE executing callback sts4.classpath.EREtBewM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-12-07 16:32:00.665
+!MESSAGE Failed getting javadoc for JavaDataParams [projectUri=file:/C:/Users/oupam/Documents/Work-Java-Projects/TheCircuitBreakerPartern/API-GATEWAY, bindingKey=Lorg/springframework/cloud/gateway/route/RouteDefinition;.getFilters()Ljava.util.List<Lorg.springframework.cloud.gateway.filter.FilterDefinition;>;, lookInOtherProjects=false]
+!STACK 0
+java.lang.IllegalArgumentException: Property must not be null: value
+	at org.eclipse.lsp4j.MarkupContent.setValue(MarkupContent.java:84)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$8(STS4LanguageClientImpl.java:368)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1763)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-12-07 16:39:20.944
+!MESSAGE Failed getting javadoc for JavaDataParams [projectUri=file:/C:/Users/oupam/Documents/Work-Java-Projects/TheCircuitBreakerPartern/API-GATEWAY, bindingKey=Lorg/springframework/cloud/gateway/route/RouteDefinition;.uri, lookInOtherProjects=false]
+!STACK 0
+java.lang.IllegalArgumentException: Property must not be null: value
+	at org.eclipse.lsp4j.MarkupContent.setValue(MarkupContent.java:84)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$8(STS4LanguageClientImpl.java:368)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1763)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-07 16:51:34.777
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1957)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:79)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-12-07 17:00:34.729
+!MESSAGE Failed getting javadoc for JavaDataParams [projectUri=file:/C:/Users/oupam/Documents/Work-Java-Projects/TheCircuitBreakerPartern/API-GATEWAY, bindingKey=Lorg/springframework/cloud/gateway/route/RouteDefinition;.uri, lookInOtherProjects=false]
+!STACK 0
+java.lang.IllegalArgumentException: Property must not be null: value
+	at org.eclipse.lsp4j.MarkupContent.setValue(MarkupContent.java:84)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$8(STS4LanguageClientImpl.java:368)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1763)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)

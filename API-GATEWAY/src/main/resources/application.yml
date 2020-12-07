@@ -11,6 +11,15 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
       
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+             
+      
+      
+      
 spring:
   application:
     name: API-GATEWAY
@@ -21,9 +30,18 @@ spring:
         uri: lb://EMPLOYEE-SERVICE
         predicates:
           - Path=/employees/**
+        filters:
+        - name: CircuitBreaker
+          args:
+               name: EMPLOYEE-SERVICE
+               fallbackuri: forward:/employeesFallback
       - id: DEPARTMENT-SERVICE
         uri: lb://DEPARTMENT-SERVICE
         predicates:
           - Path=/department/**
-          
+        filters:
+        - name: CircuitBreaker
+          args:
+               name: DEPARTMENT-SERVICE
+               fallbackuri: forward:/departmentFallback
                
