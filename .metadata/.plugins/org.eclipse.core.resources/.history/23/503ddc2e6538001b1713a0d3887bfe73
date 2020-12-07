@@ -1,0 +1,5 @@
+package com.EmployeeService.demo.Repositories;
+
+public interface EmployeeRepo {
+
+}

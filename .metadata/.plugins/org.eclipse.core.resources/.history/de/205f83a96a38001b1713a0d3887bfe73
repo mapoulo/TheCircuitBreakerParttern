@@ -1,0 +1,11 @@
+package com.DepartmentService.demo.Repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.DepartmentService.demo.Models.Department;
+
+public interface DepartmentRepo extends JpaRepository<Department, Integer> {
+
+	Department findDepartmentById(int id);
+
+}

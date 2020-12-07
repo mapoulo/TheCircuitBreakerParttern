@@ -1,0 +1,5 @@
+package com.DepartmentService.demo.Models;
+
+public class Department {
+
+}

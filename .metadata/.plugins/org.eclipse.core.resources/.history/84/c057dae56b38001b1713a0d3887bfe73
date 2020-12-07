@@ -1,0 +1,10 @@
+package com.EmployeeService.demo.ValueObject;
+
+import com.EmployeeService.demo.Models.Employee;
+
+public class RestTemplateVO {
+	
+	private Department department;
+	private Employee employee;
+
+}
