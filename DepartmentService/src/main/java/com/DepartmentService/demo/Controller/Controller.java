@@ -14,8 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.DepartmentService.demo.Models.Department;
 import com.DepartmentService.demo.Service.DepartmentService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/department")
+@Slf4j
 public class Controller {
 	
 	@Autowired
@@ -28,11 +31,13 @@ public class Controller {
 	
 	@GetMapping("/")
 	public List<Department>  getAllDepartments(){
+		log.info("Inside the getAllDepartment in the Department controller");
 		return service.getAllDepartments();
 	}
 	
 	@GetMapping("/{id}")
 	public Optional<Department> getDepartmentById(@PathVariable int id) {
+		log.info("Inside the getDepartmentById in   in the Department controller");
 		return service.getDepartmentById(id);
 	}
 
