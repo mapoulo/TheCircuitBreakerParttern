@@ -16,8 +16,12 @@ import com.EmployeeService.demo.Service.EmployeeService;
 import com.EmployeeService.demo.ValueObject.Department;
 import com.EmployeeService.demo.ValueObject.RestTemplateVO;
 
+import lombok.extern.slf4j.Slf4j;
+
+
 @RestController
 @RequestMapping("/employees")
+@Slf4j
 public class Controller {
 	
 	@Autowired
@@ -28,6 +32,8 @@ public class Controller {
 	
 	@PostMapping("/")
 	public void saveEmployee(@RequestBody Employee employee) {
+		log.info("Inside the saveEmployee in the Employee controller");
+
 		service.saveEmployee(employee);
 	}
 	
@@ -36,11 +42,15 @@ public class Controller {
 	
 	@GetMapping("/")
 	public List<Employee> getAllEmployees(){
+		log.info("Inside the getAllEmployees in the Employee controller");
+
 		return service.getAllEmployees();
 	}
 	
 	@GetMapping("/{id}")
 	public RestTemplateVO getEmployee(@PathVariable int id) {
+		log.info("Inside the getEmployee in the Employee controller");
+
 		RestTemplateVO restTemplateVO = new RestTemplateVO();
 		Employee employee = service.getEmployeeById(id);
 		Department department = resTtemplate.getForObject("http://DEPARTMENT-SERVICE/department/"+id, Department.class);
